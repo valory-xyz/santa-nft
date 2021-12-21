@@ -1,6 +1,7 @@
 require("@nomiclabs/hardhat-waffle");
 require("hardhat-deploy");
 require("dotenv").config();
+require("@nomiclabs/hardhat-etherscan");
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -19,11 +20,17 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: "0.8.4",
+  solidity: "0.8.7",
   networks: {
     avalanche: {
         url: `https://api.avax.network/ext/bc/C/rpc`,
-        accounts: [`key_here`]
+        accounts: [``]
     }
+  },
+  etherscan: {
+    // Your API key for Etherscan
+    // Obtain one at https://snowtrace.io/
+    apiKey: ""
   }
 };
+
