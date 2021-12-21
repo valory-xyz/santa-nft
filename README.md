@@ -16,7 +16,9 @@ npx hardhat help
 
 To deloy:
 
-- Set env variables `AVALANCHE_API_KEY` and `AVALANCHE_PRIVATE_KEY`.
+- Update `key_here` in `hardhat.config.js` with your key.
+- Update constructor arguments of contract `SantaNFT`
+- Run:
 
 ```
 npx hardhat run scripts/deploy.js --network avalanche
