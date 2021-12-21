@@ -18,4 +18,10 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: "0.8.4",
+  networks: {
+    avalanche: {
+        url: `https://mainnet.infura.io/v3/${AVALANCHE_API_KEY}`,
+        accounts: [`${AVALANCHE_PRIVATE_KEY}`]
+    }
+  }
 };

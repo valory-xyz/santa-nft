@@ -13,3 +13,11 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
+
+To deloy:
+
+- Set env variables `AVALANCHE_API_KEY` and `AVALANCHE_PRIVATE_KEY`.
+
+```
+npx hardhat run scripts/deploy.js --network avalanche
+```
