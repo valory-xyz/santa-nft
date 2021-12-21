@@ -1,4 +1,6 @@
 require("@nomiclabs/hardhat-waffle");
+require("hardhat-deploy");
+require("dotenv").config();
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -20,8 +22,8 @@ module.exports = {
   solidity: "0.8.4",
   networks: {
     avalanche: {
-        url: `https://mainnet.infura.io/v3/${AVALANCHE_API_KEY}`,
-        accounts: [`${AVALANCHE_PRIVATE_KEY}`]
+        url: `https://api.avax.network/ext/bc/C/rpc`,
+        accounts: [`key_here`]
     }
   }
 };
