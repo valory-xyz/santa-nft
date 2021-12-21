@@ -24,13 +24,13 @@ module.exports = {
   networks: {
     avalanche: {
         url: `https://api.avax.network/ext/bc/C/rpc`,
-        accounts: [``]
+        accounts: [`private_key_here`]
     }
   },
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://snowtrace.io/
-    apiKey: ""
+    apiKey: "api_key_here"
   }
 };
 

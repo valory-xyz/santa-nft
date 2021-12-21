@@ -1,22 +1,18 @@
-# Basic Sample Hardhat Project
+# SantaNFT
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Valory's 2021 Christmas NFTs
 
 Try running some of the following tasks:
 
 ```shell
-npx hardhat accounts
 npx hardhat compile
-npx hardhat clean
 npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+npx hardhat run scripts/deploy.js
 ```
 
 To deloy:
 
-- Update `key_here` in `hardhat.config.js` with your key.
+- Update `private_key_here` and `api_key_here` in `hardhat.config.js` with your keys.
 - Update constructor arguments of contract `SantaNFT`
 - Run:
 
