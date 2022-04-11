@@ -24,3 +24,7 @@ To verify the oracle contract run (after updating `oracle_arguments.js` with the
 ``` shell
 npx hardhat verify --network avalanche DEPLOYED_CONTRACT_ADDRESS
 ```
+
+## Deployed instances:
+
+https://snowtrace.io/address/0x953b21f0acf66cd15ef33d4985b44b05290edecc#code
